@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "login/Routes": ["apps/login/src/app/remote-entry/entry.routes.ts"],
+      "@validators/*": ["libs/shared/validators/*"],
+      "@models/*": ["libs/shared/models/*"],
+      "@stores/*": ["libs/shared/stores/*"],
+      "@consts/*": ["libs/shared/consts/*"],
+      "@services/*": ["libs/shared/services/*"],
+      "@shared/*": ["libs/shared/*"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
