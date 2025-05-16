@@ -10,7 +10,7 @@ export default withModuleFederation(
   {
     ...config,
     remotes: [
-      ['login', 'https://vash-braviant-task.vercel.app/remoteEntry.js'],
+      ['login', '/login/remoteEntry.js'],
     ]
   },
   { dts: false }

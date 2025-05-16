@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npm run build:login",
-  "outputDirectory": "dist/apps/login",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
