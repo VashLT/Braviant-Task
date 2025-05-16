@@ -1,0 +1,81 @@
+/* Theme optimized for mesh gradient background with blue and purple tones */
+/* Palette adjusted to complement the radial gradient background */
+
+@use "@angular/material" as mat;
+
+/* Light Theme */
+:root,
+:host {
+  @include mat.theme-overrides(
+    (
+      primary: #4285f4,
+      on-primary: #ffffff,
+      primary-container: #d8e6ff,
+      on-primary-container: #001d36,
+      inverse-primary: #adcaff,
+      primary-fixed: #d8e6ff,
+      primary-fixed-dim: #adcaff,
+      on-primary-fixed: #001d36,
+      on-primary-fixed-variant: #0050b3,
+
+      secondary: #5870b2,
+      on-secondary: #ffffff,
+      secondary-container: #dae2ff,
+      on-secondary-container: #121c36,
+      secondary-fixed: #dae2ff,
+      secondary-fixed-dim: #b5c5ff,
+      on-secondary-fixed: #121c36,
+      on-secondary-fixed-variant: #3e4a6f,
+
+      tertiary: #9c46e0,
+      on-tertiary: #ffffff,
+      tertiary-container: #f0dbff,
+      on-tertiary-container: #36005d,
+      tertiary-fixed: #f0dbff,
+      tertiary-fixed-dim: #e6b8ff,
+      on-tertiary-fixed: #36005d,
+      on-tertiary-fixed-variant: #7828b8,
+
+      background: #f8faff,
+      on-background: #191c23,
+      surface: #f8faff,
+      surface-dim: #d9dce8,
+      surface-bright: #f8faff,
+      surface-container-lowest: #ffffff,
+      surface-container-low: #f3f5fa,
+      surface-container: #edf0f5,
+      surface-container-high: #e7eaf0,
+      surface-container-highest: #e1e4ea,
+      on-surface: #191c23,
+
+      shadow: #000000,
+      scrim: #000000,
+      surface-tint: #4285f4,
+      inverse-surface: #2f3240,
+      inverse-on-surface: #eff1fa,
+      outline: #747894,
+      outline-variant: #c8c9d7,
+
+      neutral: #747894,
+      neutral10: #191c23,
+
+      error: #ba1a1a,
+      error-container: #fbc4c4,
+      on-error: #ffffff,
+      on-error-container: #410002,
+
+      surface-variant: #f5f5f5,
+      on-surface-variant: #555,
+      neutral-variant: #75778c,
+      neutral-variant20: #2d2f3b,
+      inverse-secondary: #b5c5ff,
+      inverse-tertiary: #e6b8ff
+    )
+  );
+
+  --primary-gradient: linear-gradient(135deg, #4285f4, #9c46e0);
+  --accent-glow: 0 0 15px rgba(76, 133, 244, 0.5);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-blur: blur(10px);
+  --max-width-page: 1440px;
+}
