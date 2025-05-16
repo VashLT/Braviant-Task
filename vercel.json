@@ -3,6 +3,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
+    {
+      "source": "/login/remoteEntry.js",
+      "destination": "/apps/login/remoteEntry.js"
+    },
     { "source": "/login/:path*", "destination": "/apps/login/:path*" },
     { "source": "/(.*)", "destination": "/apps/host/$1" }
   ],
