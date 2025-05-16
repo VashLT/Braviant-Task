@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build:host",
+  "outputDirectory": "dist/apps/host",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

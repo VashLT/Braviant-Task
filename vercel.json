@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/host/vercel.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "apps/login/vercel.json",
+      "use": "@vercel/static"
+    }
+  ]
+}
