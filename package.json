@@ -2,7 +2,12 @@
   "name": "@braviant-task/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve host --devRemotes=login",
+    "build:host": "nx build host --configuration=production",
+    "build:login": "nx build login --configuration=production",
+    "build": "nx run-many --target=build --configuration=production --projects=host,login"
+  },
   "private": true,
   "dependencies": {
     "@angular/cdk": "19.2.9",
