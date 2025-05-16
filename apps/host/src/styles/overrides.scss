@@ -1,0 +1,43 @@
+@use "@angular/material" as mat;
+
+:root {
+  @include mat.progress-spinner-overrides(
+    (
+      active-indicator-color: var(--mat-sys-on-primary)
+    )
+  );
+
+  @include mat.snack-bar-overrides(
+    (
+      supporting-text-size: 1rem,
+      container-shape: 0.5rem
+    )
+  );
+  @include mat.tooltip-overrides(
+    (
+      container-color: var(--mat-sys-surface-variant),
+      supporting-text-color: var(--mat-sys-on-surface-variant),
+      supporting-text-size: var(--mat-sys-body-medium-size)
+    )
+  );
+}
+
+.snackbar-info {
+  --mdc-snackbar-container-color: var(--mat-sys-info-container);
+  --mdc-snackbar-supporting-text-color: var(--mat-sys-on-info-container);
+}
+
+.snackbar-success {
+  --mdc-snackbar-container-color: var(--mat-sys-success-container);
+  --mdc-snackbar-supporting-text-color: var(--mat-sys-on-success-container);
+}
+
+.snackbar-error {
+  --mdc-snackbar-container-color: var(--mat-sys-error-container);
+  --mdc-snackbar-supporting-text-color: var(--mat-sys-on-error-container);
+}
+
+.snackbar-warning {
+  --mdc-snackbar-container-color: var(--mat-sys-warning-container);
+  --mdc-snackbar-supporting-text-color: var(--mat-sys-on-warning-container);
+}
