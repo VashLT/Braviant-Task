@@ -6,7 +6,8 @@
     "start": "nx serve host --devRemotes=login",
     "build:host": "nx build host --configuration=production",
     "build:login": "nx build login --configuration=production",
-    "build": "nx run-many --target=build --configuration=production --projects=host,login"
+    "build": "nx run-many --target=build --configuration=production --projects=host,login",
+    "build:vercel": "npm run build && mkdir -p dist-vercel && cp -r dist/apps/host/* dist-vercel/ && mkdir -p dist-vercel/login && cp -r dist/apps/login/* dist-vercel/login/"
   },
   "private": true,
   "dependencies": {

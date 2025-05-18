@@ -10,7 +10,7 @@ export default withModuleFederation(
   {
     ...config,
     remotes: [
-      ['login', '/login/remoteEntry.js'],
+      ['login', '/login/remoteEntry.mjs'],
     ]
   },
   { dts: false }
